@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="pw" value="Pass@1234"/>
+    <parameter name="un" value="roberthernandez@cogbooks.com"/>
+    <parameter name="Browsers" value="chrome"/>
+    <classes>
+      <class name="com.courseFlow.TestCasesForCourseFlow">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="afterClass"/>
+          <include name="startCourseFlow"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.courseFlow.TestCasesForCourseFlow -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
